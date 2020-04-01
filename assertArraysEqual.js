@@ -5,7 +5,7 @@ const assertArraysEqual = function (actual, expected) {
   } else {
     console.log(`🤬  Assertion Failed: ${actual} !== ${expected}`);
   }
-}
+};
 
 //EQARRAYS FUNCTION
 const eqArrays = function (array1, array2) {
@@ -19,4 +19,4 @@ const eqArrays = function (array1, array2) {
     }
     return true;
   }
-}
+};

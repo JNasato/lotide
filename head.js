@@ -11,9 +11,9 @@ const assertEqual = function (actual, expected) {
 const head = function (array) {
   let shift = array.shift();
   return shift;
-}
+};
 
 assertEqual(head([5, 6, 7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 assertEqual(head(["Just This"]), "Just This");
-assertEqual(head([]), undefined);       
+assertEqual(head([]), undefined);
