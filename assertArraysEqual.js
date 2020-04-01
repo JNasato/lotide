@@ -20,7 +20,3 @@ const eqArrays = function (array1, array2) {
     return true;
   }
 }
-
-const arr1 = [1, 2, 3];
-const arr2 = [1, 2, 3];
-assertArraysEqual(arr1, arr2);
