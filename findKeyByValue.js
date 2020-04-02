@@ -9,9 +9,9 @@ const assertEqual = function (actual, expected) {
 
 //FIND KEY BY VALUE
 const findKeyByValue = function (object, value) {
-  for (let show in object) {
-    if (object[show] === value) {
-      return show;
+  for (let val in object) {
+    if (object[val] === value) {
+      return val;
     }
   }
 }
