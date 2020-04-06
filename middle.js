@@ -1,5 +1,5 @@
 // MIDDLE FUNCTION
-const middle = function (array) {
+const middle = function(array) {
   let middleArray = [];
   let middleValue = Math.floor(array.length / 2);
   if (array.length > 2) {

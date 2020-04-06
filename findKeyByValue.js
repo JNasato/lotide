@@ -1,5 +1,5 @@
 // ASSERT FUNCTION
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🤗  Assertion Passed: ${actual} === ${expected}`);
   } else if (actual !== expected) {
@@ -8,13 +8,13 @@ const assertEqual = function (actual, expected) {
 };
 
 //FIND KEY BY VALUE
-const findKeyByValue = function (object, value) {
+const findKeyByValue = function(object, value) {
   for (let val in object) {
     if (object[val] === value) {
       return val;
     }
   }
-}
+};
 
 //TEST CODE
 const bestTVShowsByGenre = {

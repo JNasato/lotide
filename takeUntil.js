@@ -1,5 +1,5 @@
 //ASSERT FUNCTION
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`🤗  Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -8,7 +8,7 @@ const assertArraysEqual = function (actual, expected) {
 };
 
 //EQARRAYS FUNCTION
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
   } else {
@@ -22,16 +22,16 @@ const eqArrays = function (array1, array2) {
 };
 
 //TAKE UNTIL FUNCTION
-const takeUntil = function (array, callback) {
+const takeUntil = function(array, callback) {
   const resultingArray = [];
   for (let i = 0; i < array.length; i++) {
     if (!callback(array[i])) {
       resultingArray.push(array[i]);
     } else {
-      return resultingArray
+      return resultingArray;
     }
   }
-}
+};
 
 //TEST CODE
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];

@@ -1,5 +1,5 @@
 //ASSERT FUNCTION
-const assertObjectsEqual = function (actual, expected) {
+const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
   if (eqObjects(actual, expected)) {
     console.log(`🙌  Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
@@ -9,7 +9,7 @@ const assertObjectsEqual = function (actual, expected) {
 };
 
 //EQ ARRAYS
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   console.log(array1);
   console.log(array2);
   if (array1.length !== array2.length) {
@@ -25,7 +25,7 @@ const eqArrays = function (array1, array2) {
 };
 
 //EQ OBJECTS
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   } else {

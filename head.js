@@ -1,5 +1,5 @@
 //HEAD FUNCTION
-const head = function (array) {
+const head = function(array) {
   let shift = array.shift();
   return shift;
 };

@@ -1,6 +1,6 @@
 //ASSERT FUNCTION
 
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🤗  Assertion Passed: ${actual} === ${expected}`);
   } else if (actual !== expected) {
@@ -10,7 +10,7 @@ const assertEqual = function (actual, expected) {
 
 //COUNT LETTERS FUNCTION
 
-const countLetters = function (string) {
+const countLetters = function(string) {
   let lettersCounted = {};
   const letters = string.split(" ").join("");
   for (let letter of letters) {
@@ -21,6 +21,6 @@ const countLetters = function (string) {
     }
   }
   return lettersCounted;
-}
+};
 
-console.log(countLetters("lighthouse in the house"))
+console.log(countLetters("lighthouse in the house"));

@@ -1,5 +1,5 @@
 //WITHOUT FUNCTION
-const without = function (source, itemsToRemove) {
+const without = function(source, itemsToRemove) {
   let subset = source.slice(0);
   let newArray = [];
   for (let value of subset) {
@@ -11,7 +11,7 @@ const without = function (source, itemsToRemove) {
 };
 
 //ASSERT FUNCTION
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`🤗  Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -20,7 +20,7 @@ const assertArraysEqual = function (actual, expected) {
 };
 
 //EQARRAYS FUNCTION
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
   } else {

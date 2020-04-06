@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const head = require('../head')
+const head = require('../head');
 
 //TEST CODE
 describe('#head', () => {
@@ -18,5 +18,5 @@ describe('#head', () => {
 
   it('returns undefined for an empty array', () => {
     assert.strictEqual(head([]), undefined);
-  })
+  });
 });

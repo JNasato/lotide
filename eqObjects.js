@@ -2,7 +2,7 @@
 // Otherwise you get back a big fat false!
 
 //ASSERT FUNCTION
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🤗  Assertion Passed: ${actual} === ${expected}`);
   } else if (actual !== expected) {
@@ -11,7 +11,7 @@ const assertEqual = function (actual, expected) {
 };
 
 //EQ ARRAYS
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   console.log(array1);
   console.log(array2);
   if (array1.length !== array2.length) {
@@ -27,7 +27,7 @@ const eqArrays = function (array1, array2) {
 };
 
 //EQ OBJECTS
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   } else {

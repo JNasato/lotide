@@ -1,5 +1,5 @@
 //ASSERT FUNCTION
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🤗  Assertion Passed: ${actual} === ${expected}`);
   } else if (actual !== expected) {
@@ -8,13 +8,13 @@ const assertEqual = function (actual, expected) {
 };
 
 //FIND KEY FUNCTION
-const findKey = function (object, callback) {
+const findKey = function(object, callback) {
   for (let val in object) {
     if (callback(object[val])) {
       return val;
     }
   }
-}
+};
 
 //TEST CODE
 const starsObject = {
@@ -24,7 +24,7 @@ const starsObject = {
   "elBulli": { stars: 3 },
   "Ora": { stars: 2 },
   "Akelarre": { stars: 3 }
-}
+};
 
 assertEqual(findKey(starsObject, x => x.stars === 2), "noma");
 
